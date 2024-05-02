@@ -23,8 +23,8 @@ form{
     display: flex;
     flex-direction: row;
     border: 1px solid black;
-    width: 49%;
-    margin-left: 25%;
+    width: 43%;
+    margin-left: 28%;
     height: 100%;
     margin-top: 0%;
     margin-bottom: 0%;
@@ -52,7 +52,7 @@ input{
 select{
     border: 1px solid #555;
     height: 30px;
-    width: 150px;
+    width: 130px;
     padding: 0px 0px;
     margin-right: 10px;
 }
@@ -68,8 +68,17 @@ select{
     width: 120px;
     height: 30px;
     /* margin: 17% 0px 2% 20%; */
-    background: darkblue;
+    background: black;
     color: white;
     font-weight: 600;
     border: 0.5px solid black;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: darkblue;
+}
+
+#modal{
+    display: none;
 }

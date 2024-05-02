@@ -6,68 +6,49 @@
         
         </head>
         <body>
-            <form action="" >
+            <form action=""  >
                 
                 <div class="container">
                     <h1>Registration Form</h1>
                 <label for="name">Name</label>
                 <input type = "name" placeholder="Name" class = "name" name = "name" required><br>
                 <label for="mail">Mail Id</label>
-                <input type = "text" placeholder="Mail" class = "mail" name = "mail" required><br>
+                <input type = "mail" placeholder="Mail" class = "mail" name = "mail" required><br>
                 <label for="password">Password</label>
                 <input type = "password" placeholder="Password" class = "password" name = "password" required><br>
                 <div class="dropdown">
-               <div class="ddropdown">
-               <label for="">Country</label>
-               <select name="Country" id="select1" >
-               <option value="">--Choose Country--</option>
-               <option value="india">India</option>
-               <option value="america">America</option>
-               <option value="australia">Australia</option>
-               </select>
-               </div>
-               <div class="ddropdown">
-                <label for="">State</label>
-                <select name="State" id="select2">
-                    <option value="">--Choose State--</option>
-                <!-- <option value="">--Choose Country--</option>
-                <option value="india">INDIA</option>
-                <option value="america">AMERICA</option>
-                <option value="russia">RUSSIA</option> -->
-                </select>
-                </div>
-                <div class="ddropdown">
+                    <div class="ddropdown">
+                        <label for="">Country</label>
+                <select id="countrySelect" name = "country" onchange="populateSubcategories(),finalPopulate()">
+                    <option value="">--Select Country--</option>
+                    <option value="India">India</option>
+                    <option value="America">America</option>
+                    <option value="Australia">Australia</option>
+                  </select>
+                  </div>
+                  <div class="ddropdown">
+                    <label for="">State</label>
+                  <select id="stateSelect" name = "state" onchange="finalPopulate()">
+                    <option value="">--Select State--</option>
+                  </select>
+                  </div>
+                  <div class="ddropdown">
                     <label for="">City</label>
-                    <select name="City" id="select3">
-                        <option value="">--Choose City--</option>
-                    </select>
-                    </div>
+                  <select id="citySelect" name="city">            
+                    <option value="">--Select City--</option>
+                  </select>
                 </div>
-                <!-- <div class="ddropdown">
-                    <label for="">Pincode</label>
-                    <select name="pincode" id="select5">
-                        <option value="">--Pincode--</option>
-                        <option value="">226001</option>
-                        <option value="">226002</option>
-                        <option value="">226003</option>
-                        <option value="">226004</option>
-
-                    </select>
-                    </div> -->
-                <!-- </div> -->
+                </div>
                 <div class = "button">
                <button type="submit" class="btn">Submit</button>
+               <div class="modal-dialog modal-dialog-centered" id="modal">
+                ...
+              </div>
             </div>
             </form>
-        
-
         </div>
         <script src="index.js">
-
-        </script>
-        
-
-
-        </body>
+        </script>    
+    </body>
     </head>
 </html>
